@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JTMK Landing Page</title>
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery and jQuery Mobile JS -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<!-- Social Media Sidebar -->
+<div class="social-sidebar">
+    <a href="https://www.linkedin.com" target="_blank"><img src="LinkedIn.png" alt="LinkedIn"></a>
+   <a href="https://www.github.com" target="_blank"><img src="GitHub.png" alt="GitHub"></a>
+    <a href="https://www.twitter.com" target="_blank"><img src="Twitter.png" alt="Twitter"></a>
+   <a href="https://www.youtube.com" target="_blank"><img src="YouTube.png" alt="YouTube"></a>
+    <a href="https://www.instagram.com" target="_blank"><img src="Instagram.jpg" alt="Instagram"></a>
+</div>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+
+    <!-- HEADER -->
+    <div data-role="header" data-position="fixed">
+        <h1><img src="JTMK.jpg" alt="Logo" class="logo"> JTMK</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div role="main" class="ui-content">
+        <h2>HEY, MY NAME IS JTMK</h2>
+        <p>JTMK is the Department of Information and Communication Technology (JTMK) offering DDT courses (Diploma in Information Technology (Digital Technology)) at Seberang Perai Polytechnic (PSP).</p>
+        <a href="#projects" class="ui-btn ui-corner-all ui-shadow ui-btn-b">View Projects</a>
+    </div>
+
+    <!-- FOOTER -->
+    <div data-role="footer" data-position="fixed">
+        <h4>Copyright © DDT4B S2 2024/2025. All rights reserved.</h4>
+    </div>
+</div>
+
+<!-- ABOUT PAGE -->
+<div data-role="page" id="about">
+
+    <div data-role="header" data-position="fixed">
+        <h1><img src="JTMK.jpg" alt="Logo" class="logo"> JTMK</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about" class="ui-btn-active">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div role="main" class="ui-content">
+    <h2>About Us</h2>
+    <ul class="team-list">
+        <li class="team-member">
+            <img src="GAN.jpg" alt="Software Head">
+            <h2>Program Head (Software Track)</h2>
+            <p>Name: GANESHA A/L DURAISINGAM<br>Phone: 016-5005824</p>
+        </li>
+        <li class="team-member">
+            <img src="NAVI.jpg" alt="Network Head">
+            <h2>Program Head (Network Track)</h2>
+            <p>Name: NAVINESH A/L RICHARD LOUIS<br>Phone: 017-5596033</p>
+        </li>
+        <li class="team-member">
+            <img src="KRISH.jpg" alt="Data Head">
+            <h2>Program Head (Data Track)</h2>
+            <p>Name: KIRSHANTHIRAN A/L MURASOLIMARAN<br>Phone: 011-26830261</p>
+        </li>
+    </ul>
+</div>
+
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Copyright © DDT4B S2 2024/2025. All rights reserved.</h4>
+    </div>
+</div>
+
+<!-- PROJECTS PAGE -->
+<div data-role="page" id="projects">
+
+    <div data-role="header" data-position="fixed">
+        <h1><img src="JTMK.jpg" alt="Logo" class="logo"> JTMK</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects" class="ui-btn-active">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2>Our Projects</h2>
+
+        <ul data-role="listview" data-inset="true">
+            <li class="project-item">
+                <div class="project-image">
+					<img src="project1.jpg" alt="Project 1">
+				</div>
+                <div class="project-details">
+                    <h2>Robotic arm </h2>
+					<p>This project showcases a robotic arm powered by Arduino and controlled through AI voice commands. It can perform pick-and-place operations and adapt to different object sizes using sensor calibration.</p>
+                    <a href="robotic_arm_report.pdf" target="_blank" class="ui-btn">View Report</a>
+                </div>
+            </li>
+
+            <li class="project-item">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Project 2">
+                </div>
+                <div class="project-details">
+                    <h2>Smart Inventory Web System</h2>
+					<p>A full-stack inventory management system for small businesses. Built with HTML, CSS, JavaScript, and PHP with MySQL integration. Includes user login, real-time updates, and report generation.</p>
+                    <a href="report2.pdf" target="_blank" class="ui-btn">View Report</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Copyright © DDT4B S2 2024/2025. All rights reserved.</h4>
+    </div>
+</div>
+
+<!-- CONTACT PAGE -->
+<div data-role="page" id="contact">
+
+    <div data-role="header" data-position="fixed">
+        <h1><img src="JTMK.jpg" alt="Logo" class="logo"> JTMK</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2>Contact Us</h2>
+        <a href="tel:+60165005824" class="ui-btn ui-icon-phone ui-btn-icon-left">Call Us(GANESHA)</a>
+		<a href="tel:+60175596033" class="ui-btn ui-icon-phone ui-btn-icon-left">Call Us(NAVINESH)</a>
+		<a href="tel:+601126830261" class="ui-btn ui-icon-phone ui-btn-icon-left">Call Us(KIRSHANTHIRAN)</a>
+        <a href="mailto:ghanesha8@gmail.com" class="ui-btn ui-icon-mail ui-btn-icon-left">Email Us(GANESHA)</a>
+		<a href="mailto:avinesh1007@gmail.com" class="ui-btn ui-icon-mail ui-btn-icon-left">Email Us(NAVINESH)</a>
+		<a href="mailto:krishanthiranm@gmail.com" class="ui-btn ui-icon-mail ui-btn-icon-left">Email Us(KIRSHANTHIRAN)</a>
+        <a href="https://wa.me/60115005824" class="ui-btn ui-icon-comment ui-btn-icon-left" target="_blank">WhatsApp Us(GANESHA)</a>
+		<a href="https://wa.me/60175596033" class="ui-btn ui-icon-comment ui-btn-icon-left" target="_blank">WhatsApp Us(NAVINESH)</a>
+		<a href="https://wa.me/601126830261" class="ui-btn ui-icon-comment ui-btn-icon-left" target="_blank">WhatsApp Us(KIRSHANTHIRAN)</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Copyright © DDT4B S2 2024/2025. All rights reserved.</h4>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden; 
+}
+
+
+.ui-page {
+    background: transparent ;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+    z-index: -1;
+}
+
+/* ========== HEADER ========== */
+.ui-header {
+    background-color: #0ff;
+    border: none;
+    text-align: center;
+    box-shadow: 0 0 20px #0ff;
+}
+
+.logo {
+    width: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* ========== NAVBAR ========== */
+.ui-navbar ul li a {
+    background: #111;
+    color: #0ff;
+    border: 1px solid #0ff;
+    text-shadow: bold;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.ui-navbar ul li a:hover,
+.ui-navbar ul li .ui-btn-active {
+    background: #0ff;
+    color: #000;
+}
+
+/* ========== MAIN CONTENT ========== */
+.ui-content h2 {
+    font-size: 28px;
+    color: #0ff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.ui-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.ui-btn {
+    background: #0ff;
+    color: #000;
+    border: none;
+    text-shadow: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #0ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ui-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0ff;
+}
+
+/* ========== SOCIAL MEDIA SIDEBAR ========== */
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.social-sidebar a {
+    display: block;
+    margin: 8px 0;
+    transition: transform 0.3s;
+}
+
+.social-sidebar img {
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #0ff;
+}
+
+.social-sidebar a:hover {
+    transform: scale(1.3);
+}
+
+/* ========== ABOUT TEAM STYLING ========== */
+.team-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 10px #0ff;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #0ff;
+}
+
+.team-member img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* ========== PROJECT LIST ========== */
+.project-item {
+    background: radial-gradient(circle at center, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure it spans fully */
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+.project-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.8);
+}
+
+.project-details h2 {
+    margin-top: 0;
+    color: #0ff;
+}
+
+.project-details p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ========== FOOTER ========== */
+.ui-footer {
+    background-color: #111;
+    color: #0ff;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0 0 20px #0ff;
+}
+
+/* ========== CONTACT BUTTONS ========== */
+.ui-icon-phone:before {
+    background: none;
+    content: "📞";
+}
+.ui-icon-mail:before {
+    background: none;
+    content: "📧";
+}
+.ui-icon-comment:before {
+    background: none;
+    content: "💬";
+}
